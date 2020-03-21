@@ -1,0 +1,7 @@
+cantidadNodos:=16
+LADO:=4
+compilarToroide:
+	mpicc -Wall -g t.c -o t
+
+ejecutarToroide:
+	mpirun -n $(cantidadNodos) ./t $(LADO)
